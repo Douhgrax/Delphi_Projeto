@@ -23,7 +23,7 @@ object Form2: TForm2
     OnClick = ClientesClick
   end
   object Estoque: TButton
-    Left = 426
+    Left = 143
     Top = 33
     Width = 105
     Height = 49
@@ -32,7 +32,7 @@ object Form2: TForm2
     OnClick = FornecedorClick
   end
   object Fornecedor: TButton
-    Left = 830
+    Left = 254
     Top = 33
     Width = 107
     Height = 49
@@ -43,7 +43,7 @@ object Form2: TForm2
   object DBGrid1: TDBGrid
     AlignWithMargins = True
     Left = 32
-    Top = 112
+    Top = 104
     Width = 905
     Height = 449
     Color = clWindowText
@@ -60,5 +60,50 @@ object Form2: TForm2
     TitleFont.Height = -13
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+  end
+  object Compras: TButton
+    Left = 818
+    Top = 34
+    Width = 107
+    Height = 48
+    Caption = 'Compras'
+    TabOrder = 4
+    OnClick = ComprasClick
+  end
+  object Receber: TButton
+    Left = 367
+    Top = 33
+    Width = 107
+    Height = 49
+    Caption = 'Receber'
+    TabOrder = 5
+    OnClick = ReceberClick
+  end
+  object Pagar: TButton
+    Left = 479
+    Top = 33
+    Width = 107
+    Height = 49
+    Caption = 'Pagar'
+    TabOrder = 6
+    OnClick = PagarClick
+  end
+  object Caixa: TButton
+    Left = 592
+    Top = 33
+    Width = 107
+    Height = 49
+    Caption = 'Caixa'
+    TabOrder = 7
+    OnClick = CaixaClick
+  end
+  object NFE: TButton
+    Left = 705
+    Top = 33
+    Width = 107
+    Height = 49
+    Caption = 'NF-e'
+    TabOrder = 8
+    OnClick = NFEClick
   end
 end
