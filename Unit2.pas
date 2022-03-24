@@ -9,23 +9,12 @@ uses
 
 type
   TForm2 = class(TForm)
-    Clientes: TButton;
-    Estoque: TButton;
-    Fornecedor: TButton;
-    DBGrid1: TDBGrid;
-    Compras: TButton;
-    Receber: TButton;
-    Pagar: TButton;
-    Caixa: TButton;
-    NFE: TButton;
-    procedure FornecedorClick(Sender: TObject);
-    procedure ClientesClick(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
-    procedure ComprasClick(Sender: TObject);
-    procedure ReceberClick(Sender: TObject);
-    procedure PagarClick(Sender: TObject);
-    procedure CaixaClick(Sender: TObject);
-    procedure NFEClick(Sender: TObject);
+    bntCliente: TButton;
+    BntEstoque: TButton;
+    BntVenda: TButton;
+    BntGerenciar: TButton;
+    bnt_Ideia: TButton;
+    procedure bntClienteClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -40,53 +29,10 @@ implementation
 
 {$R *.dfm}
 
-uses Unit3;
+uses Unit3, Unit1;
 
-procedure TForm2.Button2Click(Sender: TObject);
-begin
-    DataM.FDQuery3.Active := not DataM.FDQuery3.Active;
-    DBGrid1.DataSource := DataM.DataSource3;
-end;
-
-procedure TForm2.CaixaClick(Sender: TObject);
-begin
-    DataM.FDQuery7.Active := not DataM.FDQuery7.Active;
-    DBGrid1.DataSource := DataM.DataSource7;
-end;
-
-procedure TForm2.ClientesClick(Sender: TObject);
-begin
-  DataM.FDQuery2.Active := not  DataM.FDQuery2.Active;
-  DBGrid1.DataSource := DataM.DataSource2;
-end;
-
-procedure TForm2.ComprasClick(Sender: TObject);
-begin
-     DataM.FDQuery4.Active := not DataM.FDQuery4.Active;
-     DBGrid1.DataSource := DataM.DataSource4;
-end;
-
-procedure TForm2.FornecedorClick(Sender: TObject);
-begin
-  DataM.FDQuery1.Active := not DataM.FDQuery1.Active;
-  DBGrid1.DataSource := DataM.DataSource1;
-end;
-procedure TForm2.NFEClick(Sender: TObject);
-begin
-DataM.FDQuery8.Active := not DataM.FDQuery8.Active;
-    DBGrid1.DataSource := DataM.DataSource8;
-end;
-
-procedure TForm2.PagarClick(Sender: TObject);
-begin
-     DataM.FDQuery6.Active := not DataM.FDQuery6.Active;
-     DBGrid1.DataSource := DataM.DataSource6;
-end;
-
-procedure TForm2.ReceberClick(Sender: TObject);
-begin
-    DataM.FDQuery5.Active := not DataM.FDQuery5.Active;
-    DBGrid1.DataSource := DataM.DataSource5;
+procedure TForm2.bntClienteClick(Sender: TObject);
+begin;
 end;
 
 end.

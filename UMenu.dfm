@@ -1,9 +1,9 @@
-object Form2: TForm2
-  Left = 0
+object fMenu: TfMenu
+  Left = 1
   Top = 0
-  Caption = 'Form2'
-  ClientHeight = 89
-  ClientWidth = 623
+  Caption = 'Menu'
+  ClientHeight = 99
+  ClientWidth = 647
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -11,11 +11,12 @@ object Form2: TForm2
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poDesigned
   PixelsPerInch = 96
   TextHeight = 13
   object bntCliente: TButton
-    Left = 32
-    Top = 33
+    Left = 8
+    Top = 22
     Width = 105
     Height = 49
     Caption = 'Cliente'
@@ -23,32 +24,35 @@ object Form2: TForm2
     OnClick = bntClienteClick
   end
   object BntEstoque: TButton
-    Left = 143
-    Top = 33
+    Left = 135
+    Top = 22
     Width = 105
     Height = 49
     Caption = 'Estoque'
     TabOrder = 1
+    OnClick = BntEstoqueClick
   end
   object BntVenda: TButton
-    Left = 254
-    Top = 33
+    Left = 262
+    Top = 22
     Width = 107
     Height = 49
     Caption = 'Venda'
     TabOrder = 2
+    OnClick = BntVendaClick
   end
   object BntGerenciar: TButton
-    Left = 367
-    Top = 33
+    Left = 399
+    Top = 22
     Width = 107
     Height = 49
     Caption = 'Gerenciar'
     TabOrder = 3
+    OnClick = BntGerenciarClick
   end
   object bnt_Ideia: TButton
-    Left = 480
-    Top = 31
+    Left = 536
+    Top = 18
     Width = 107
     Height = 53
     Caption = 'Bot'#227'o ideia'
