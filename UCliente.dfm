@@ -1,10 +1,10 @@
 object fCliente: TfCliente
   Left = 1
-  Top = 118
+  Top = 140
   Align = alCustom
   Caption = 'Cliente'
   ClientHeight = 631
-  ClientWidth = 644
+  ClientWidth = 701
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -16,9 +16,9 @@ object fCliente: TfCliente
   PixelsPerInch = 96
   TextHeight = 13
   object dbGridCliente: TDBGrid
-    Left = 27
+    Left = 8
     Top = 96
-    Width = 609
+    Width = 685
     Height = 418
     TabOrder = 0
     TitleFont.Charset = DEFAULT_CHARSET
@@ -28,27 +28,27 @@ object fCliente: TfCliente
     TitleFont.Style = []
   end
   object bntNovoCliente: TButton
-    Left = 24
-    Top = 25
+    Left = 8
+    Top = 8
     Width = 105
-    Height = 49
+    Height = 82
     Caption = 'Novo'
     TabOrder = 1
     OnClick = bntNovoClienteClick
   end
   object bntAlterarCliente: TButton
-    Left = 192
-    Top = 25
+    Left = 200
+    Top = 8
     Width = 105
-    Height = 49
+    Height = 82
     Caption = 'Alterar'
     TabOrder = 2
   end
   object bntExcluirCliente: TButton
-    Left = 360
-    Top = 25
+    Left = 400
+    Top = 8
     Width = 105
-    Height = 49
+    Height = 82
     Caption = 'Excluir'
     TabOrder = 3
   end
@@ -61,10 +61,10 @@ object fCliente: TfCliente
   end
   object btnMostrarCliente: TButton
     Tag = 118
-    Left = 528
-    Top = 25
+    Left = 576
+    Top = 8
     Width = 105
-    Height = 49
+    Height = 82
     Caption = 'Mostrar'
     TabOrder = 5
     OnClick = btnMostrarClienteClick

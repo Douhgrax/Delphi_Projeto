@@ -40,7 +40,7 @@ end;
 
 procedure TfCliente.btnMostrarClienteClick(Sender: TObject);
 begin
-  Datam.FDQuery2.Active := not  Datam.FDQuery2.Active;
+  Datam.ADQCliente.Active := not  Datam.ADQCliente.Active;
   dbGridCliente.DataSource := DataM.DataSource2;
 end;
 

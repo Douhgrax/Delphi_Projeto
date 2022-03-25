@@ -1,9 +1,9 @@
-object fCadastroClientes: TfCadastroClientes
+﻿object fCadastroClientes: TfCadastroClientes
   Left = 0
   Top = 0
   Caption = 'Cadastro'
-  ClientHeight = 674
-  ClientWidth = 800
+  ClientHeight = 627
+  ClientWidth = 712
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -14,7 +14,7 @@ object fCadastroClientes: TfCadastroClientes
   PixelsPerInch = 96
   TextHeight = 13
   object lCpf: TLabel
-    Left = 248
+    Left = 224
     Top = 189
     Width = 19
     Height = 13
@@ -35,21 +35,21 @@ object fCadastroClientes: TfCadastroClientes
     Caption = 'CNPJ'
   end
   object lNomeFantasia: TLabel
-    Left = 248
+    Left = 224
     Top = 141
     Width = 71
     Height = 13
     Caption = 'Nome Fantasia'
   end
   object Label2: TLabel
-    Left = 248
+    Left = 224
     Top = 237
     Width = 14
     Height = 13
     Caption = 'RG'
   end
   object Label3: TLabel
-    Left = 248
+    Left = 224
     Top = 293
     Width = 96
     Height = 13
@@ -70,8 +70,8 @@ object fCadastroClientes: TfCadastroClientes
     Caption = 'Data de Funda'#231#227'o'
   end
   object Label6: TLabel
-    Left = 176
-    Top = 122
+    Left = 141
+    Top = 114
     Width = 74
     Height = 13
     HelpType = htKeyword
@@ -79,50 +79,50 @@ object fCadastroClientes: TfCadastroClientes
     StyleName = 'sss'
   end
   object Label7: TLabel
-    Left = 488
+    Left = 466
     Top = 143
     Width = 13
     Height = 13
     Caption = 'UF'
   end
   object Label8: TLabel
-    Left = 634
+    Left = 576
     Top = 143
     Width = 33
     Height = 13
     Caption = 'Cidade'
   end
   object Label9: TLabel
-    Left = 488
+    Left = 466
     Top = 189
     Width = 19
     Height = 13
     Caption = 'CEP'
   end
   object Label10: TLabel
-    Left = 648
+    Left = 634
     Top = 189
     Width = 19
     Height = 13
     Caption = 'Pa'#237's'
   end
   object Label11: TLabel
-    Left = 488
+    Left = 464
     Top = 237
     Width = 45
     Height = 13
     Caption = 'Endere'#231'o'
   end
   object Label12: TLabel
-    Left = 488
+    Left = 464
     Top = 293
     Width = 28
     Height = 13
     Caption = 'Bairro'
   end
   object Label13: TLabel
-    Left = 551
-    Top = 122
+    Left = 524
+    Top = 114
     Width = 45
     Height = 13
     HelpType = htKeyword
@@ -130,17 +130,80 @@ object fCadastroClientes: TfCadastroClientes
     StyleName = 'sss'
   end
   object Label14: TLabel
-    Left = 359
-    Top = 394
+    Left = 176
+    Top = 370
     Width = 39
     Height = 13
     HelpType = htKeyword
     Caption = 'Contato'
     StyleName = 'sss'
   end
+  object Label15: TLabel
+    Left = 488
+    Top = 370
+    Width = 41
+    Height = 13
+    HelpType = htKeyword
+    Caption = 'Empresa'
+    StyleName = 'sss'
+  end
+  object Label16: TLabel
+    Left = 32
+    Top = 405
+    Width = 37
+    Height = 13
+    HelpType = htKeyword
+    Caption = 'N'#250'mero'
+    StyleName = 'sss'
+  end
+  object Label17: TLabel
+    Left = 32
+    Top = 477
+    Width = 28
+    Height = 13
+    HelpType = htKeyword
+    Caption = 'E-mail'
+    StyleName = 'sss'
+  end
+  object Label18: TLabel
+    Left = 224
+    Top = 405
+    Width = 42
+    Height = 13
+    HelpType = htKeyword
+    Caption = 'Telefone'
+    StyleName = 'sss'
+  end
+  object Label19: TLabel
+    Left = 224
+    Top = 477
+    Width = 84
+    Height = 13
+    HelpType = htKeyword
+    Caption = 'Nome do Contato'
+    StyleName = 'sss'
+  end
+  object Label20: TLabel
+    Left = 464
+    Top = 405
+    Width = 105
+    Height = 13
+    HelpType = htKeyword
+    Caption = 'Empresa que trabalha'
+    StyleName = 'sss'
+  end
+  object Label21: TLabel
+    Left = 464
+    Top = 477
+    Width = 44
+    Height = 13
+    HelpType = htKeyword
+    Caption = 'Profiss'#227'o'
+    StyleName = 'sss'
+  end
   object pClienteCadastro: TPanel
-    Left = 160
-    Top = 24
+    Left = 176
+    Top = 16
     Width = 393
     Height = 57
     Caption = 'Cadastro Cliente'
@@ -159,29 +222,29 @@ object fCadastroClientes: TfCadastroClientes
     Height = 21
     TabOrder = 1
   end
-  object Edit1: TEdit
+  object eCnpj: TEdit
     Left = 24
     Top = 208
     Width = 153
     Height = 21
     TabOrder = 2
   end
-  object Edit2: TEdit
-    Left = 232
+  object eNomeFantasia: TEdit
+    Left = 216
     Top = 162
     Width = 153
     Height = 21
     TabOrder = 3
   end
-  object Edit3: TEdit
-    Left = 232
+  object eCPF: TEdit
+    Left = 216
     Top = 208
     Width = 153
     Height = 21
     TabOrder = 4
   end
-  object Edit4: TEdit
-    Left = 232
+  object eRg: TEdit
+    Left = 216
     Top = 256
     Width = 153
     Height = 21
@@ -194,60 +257,118 @@ object fCadastroClientes: TfCadastroClientes
     Height = 21
     TabOrder = 6
   end
-  object Edit6: TEdit
-    Left = 232
+  object eData: TEdit
+    Left = 216
     Top = 312
     Width = 153
     Height = 21
     TabOrder = 7
   end
-  object Edit7: TEdit
+  object eDataFundação: TEdit
     Left = 24
     Top = 312
     Width = 153
     Height = 21
     TabOrder = 8
   end
-  object Edit8: TEdit
-    Left = 472
+  object eUf: TEdit
+    Left = 452
     Top = 162
     Width = 49
     Height = 21
     TabOrder = 9
   end
-  object Edit9: TEdit
-    Left = 568
+  object eCidade: TEdit
+    Left = 551
     Top = 162
     Width = 153
     Height = 21
     TabOrder = 10
   end
-  object Edit10: TEdit
-    Left = 624
+  object ePais: TEdit
+    Left = 604
     Top = 208
     Width = 97
     Height = 21
     TabOrder = 11
   end
-  object Edit11: TEdit
-    Left = 472
-    Top = 208
+  object eCep: TEdit
+    Left = 452
+    Top = 210
     Width = 90
     Height = 21
     TabOrder = 12
   end
-  object Edit12: TEdit
-    Left = 472
+  object eEndereço: TEdit
+    Left = 452
     Top = 256
     Width = 249
     Height = 21
     TabOrder = 13
   end
   object Edit13: TEdit
-    Left = 472
+    Left = 452
     Top = 312
     Width = 153
     Height = 21
     TabOrder = 14
+  end
+  object btnCancelarCliente: TButton
+    Left = 32
+    Top = 561
+    Width = 105
+    Height = 49
+    Caption = 'Cancelar'
+    TabOrder = 15
+  end
+  object btnGravarCliente: TButton
+    Left = 576
+    Top = 561
+    Width = 105
+    Height = 49
+    Caption = 'Gravar'
+    TabOrder = 16
+  end
+  object Edit14: TEdit
+    Left = 24
+    Top = 424
+    Width = 153
+    Height = 21
+    TabOrder = 17
+  end
+  object Edit15: TEdit
+    Left = 216
+    Top = 424
+    Width = 153
+    Height = 21
+    TabOrder = 18
+  end
+  object Edit16: TEdit
+    Left = 24
+    Top = 496
+    Width = 153
+    Height = 21
+    TabOrder = 19
+  end
+  object Edit17: TEdit
+    Left = 216
+    Top = 496
+    Width = 153
+    Height = 21
+    TabOrder = 20
+  end
+  object Edit18: TEdit
+    Left = 440
+    Top = 424
+    Width = 153
+    Height = 21
+    TabOrder = 21
+  end
+  object Edit19: TEdit
+    Left = 440
+    Top = 496
+    Width = 153
+    Height = 21
+    TabOrder = 22
   end
 end

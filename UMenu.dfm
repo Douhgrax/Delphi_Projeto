@@ -2,8 +2,8 @@ object fMenu: TfMenu
   Left = 1
   Top = 0
   Caption = 'Menu'
-  ClientHeight = 99
-  ClientWidth = 647
+  ClientHeight = 107
+  ClientWidth = 700
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -16,46 +16,46 @@ object fMenu: TfMenu
   TextHeight = 13
   object bntCliente: TButton
     Left = 8
-    Top = 22
+    Top = 20
     Width = 105
-    Height = 49
+    Height = 79
     Caption = 'Cliente'
     TabOrder = 0
     OnClick = bntClienteClick
   end
-  object BntEstoque: TButton
-    Left = 135
-    Top = 22
-    Width = 105
-    Height = 49
-    Caption = 'Estoque'
-    TabOrder = 1
-    OnClick = BntEstoqueClick
-  end
   object BntVenda: TButton
     Left = 262
-    Top = 22
+    Top = 20
     Width = 107
-    Height = 49
+    Height = 79
     Caption = 'Venda'
-    TabOrder = 2
+    TabOrder = 1
     OnClick = BntVendaClick
   end
   object BntGerenciar: TButton
     Left = 399
-    Top = 22
+    Top = 20
     Width = 107
-    Height = 49
+    Height = 79
     Caption = 'Gerenciar'
-    TabOrder = 3
+    TabOrder = 2
     OnClick = BntGerenciarClick
   end
   object bnt_Ideia: TButton
-    Left = 536
+    Left = 528
     Top = 18
     Width = 107
-    Height = 53
+    Height = 81
     Caption = 'Bot'#227'o ideia'
+    TabOrder = 3
+  end
+  object BntEstoque: TButton
+    Left = 136
+    Top = 18
+    Width = 105
+    Height = 81
+    Caption = 'Estoque'
     TabOrder = 4
+    OnClick = BntEstoqueClick
   end
 end

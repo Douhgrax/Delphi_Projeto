@@ -23,7 +23,7 @@ object DataM: TDataM
     Left = 120
     Top = 104
   end
-  object FDQuery1: TFDQuery
+  object ADQEstoque: TFDQuery
     Connection = FDConnection1
     SQL.Strings = (
       'select * from testoque')
@@ -31,11 +31,11 @@ object DataM: TDataM
     Top = 160
   end
   object DataSource1: TDataSource
-    DataSet = FDQuery1
+    DataSet = ADQEstoque
     Left = 144
     Top = 160
   end
-  object FDQuery2: TFDQuery
+  object ADQCliente: TFDQuery
     Connection = FDConnection1
     SQL.Strings = (
       'select * from tcliente')
@@ -43,7 +43,7 @@ object DataM: TDataM
     Top = 216
   end
   object DataSource2: TDataSource
-    DataSet = FDQuery2
+    DataSet = ADQCliente
     Left = 144
     Top = 216
   end

@@ -40,7 +40,7 @@ end;
 
 procedure TfEstoque.btnMostrarEstoqueClick(Sender: TObject);
 begin
-   Datam.FDQuery1.Active := not  Datam.FDQuery1.Active;
+   Datam.ADQEstoque.Active := not  Datam.ADQEstoque.Active;
    dbGridEstoque.DataSource := DataM.DataSource1;
 end;
 

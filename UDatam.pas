@@ -15,9 +15,9 @@ type
     FDConnection1: TFDConnection;
     FDPhysFBDriverLink1: TFDPhysFBDriverLink;
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
-    FDQuery1: TFDQuery;
+    ADQEstoque: TFDQuery;
     DataSource1: TDataSource;
-    FDQuery2: TFDQuery;
+    ADQCliente: TFDQuery;
     DataSource2: TDataSource;
     FDQuery3: TFDQuery;
     DataSource3: TDataSource;
