@@ -55,6 +55,7 @@ type
     Label19: TLabel;
     Label20: TLabel;
     Label21: TLabel;
+    procedure btnCancelarClienteClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -67,5 +68,10 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TfCadastroClientes.btnCancelarClienteClick(Sender: TObject);
+begin
+Close;
+end;
 
 end.

@@ -10,6 +10,7 @@ object fMenu: TfMenu
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
+  Menu = MainMenu1
   OldCreateOrder = False
   Position = poDesigned
   PixelsPerInch = 96
@@ -57,5 +58,31 @@ object fMenu: TfMenu
     Caption = 'Estoque'
     TabOrder = 4
     OnClick = BntEstoqueClick
+  end
+  object MainMenu1: TMainMenu
+    Left = 368
+    Top = 32
+    object N1: TMenuItem
+      Caption = 'Arquivos'
+    end
+    object Utilitarios1: TMenuItem
+      Caption = 'Utilitarios'
+      object Cliente1: TMenuItem
+        Caption = 'Cliente'
+      end
+      object Estoque1: TMenuItem
+        Caption = 'Estoque'
+      end
+      object Venda1: TMenuItem
+        Caption = 'Venda'
+      end
+      object Gerenciar1: TMenuItem
+        Caption = 'Gerenciar'
+      end
+    end
+    object Sair1: TMenuItem
+      Caption = 'Sair'
+      OnClick = Sair1Click
+    end
   end
 end

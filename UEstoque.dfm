@@ -24,7 +24,7 @@ object fEstoque: TfEstoque
     OnClick = bntNovoEstoqueClick
   end
   object bntAlterarEstoque: TButton
-    Left = 192
+    Left = 264
     Top = 25
     Width = 105
     Height = 49
@@ -32,28 +32,20 @@ object fEstoque: TfEstoque
     TabOrder = 1
   end
   object bntExcluirEstoque: TButton
-    Left = 360
+    Left = 504
     Top = 25
     Width = 105
     Height = 49
     Caption = 'Excluir'
     TabOrder = 2
   end
-  object btnMostrarEstoque: TButton
-    Left = 526
-    Top = 25
-    Width = 105
-    Height = 49
-    Caption = 'Mostrar'
-    TabOrder = 3
-    OnClick = btnMostrarEstoqueClick
-  end
   object dbGridEstoque: TDBGrid
     Left = 30
     Top = 96
     Width = 609
     Height = 418
-    TabOrder = 4
+    DataSource = DataM.DataSource1
+    TabOrder = 3
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
@@ -65,6 +57,6 @@ object fEstoque: TfEstoque
     Top = 520
     Width = 121
     Height = 21
-    TabOrder = 5
+    TabOrder = 4
   end
 end

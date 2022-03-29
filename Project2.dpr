@@ -10,7 +10,8 @@ uses
   UEstoque in 'UEstoque.pas' {fEstoque},
   UVenda in 'UVenda.pas' {fVenda},
   UCadastroCliente in 'UCadastroCliente.pas' {fCadastroClientes},
-  UCadastroProduto in 'UCadastroProduto.pas' {fCadastroProduto};
+  UCadastroProduto in 'UCadastroProduto.pas' {fCadastroProduto},
+  UTelaLogin in 'UTelaLogin.pas' {Form4};
 
 {$R *.res}
 
@@ -25,5 +26,6 @@ begin
   Application.CreateForm(TfVenda, fVenda);
   Application.CreateForm(TfCadastroClientes, fCadastroClientes);
   Application.CreateForm(TfCadastroProduto, fCadastroProduto);
+  Application.CreateForm(TForm4, Form4);
   Application.Run;
 end.

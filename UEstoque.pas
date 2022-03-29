@@ -12,7 +12,6 @@ type
     bntNovoEstoque: TButton;
     bntAlterarEstoque: TButton;
     bntExcluirEstoque: TButton;
-    btnMostrarEstoque: TButton;
     dbGridEstoque: TDBGrid;
     edtBuscaCliente: TEdit;
     procedure btnMostrarEstoqueClick(Sender: TObject);

@@ -14,10 +14,19 @@ type
     BntGerenciar: TButton;
     bnt_Ideia: TButton;
     BntEstoque: TButton;
+    MainMenu1: TMainMenu;
+    N1: TMenuItem;
+    Utilitarios1: TMenuItem;
+    Sair1: TMenuItem;
+    Estoque1: TMenuItem;
+    Cliente1: TMenuItem;
+    Venda1: TMenuItem;
+    Gerenciar1: TMenuItem;
     procedure bntClienteClick(Sender: TObject);
     procedure BntEstoqueClick(Sender: TObject);
     procedure BntVendaClick(Sender: TObject);
     procedure BntGerenciarClick(Sender: TObject);
+    procedure Sair1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -33,7 +42,7 @@ implementation
 {$R *.dfm}
 
 uses Unit3, Unit1, UDatam, UCliente, UEstoque, UVenda, UGerenciar,
-  UCadastroCliente;
+  UCadastroCliente, UTelaLogin;
 
 procedure TfMenu.bntClienteClick(Sender: TObject);
 begin;
@@ -57,6 +66,11 @@ procedure TfMenu.BntVendaClick(Sender: TObject);
 begin
   fVenda := TfVenda.Create(Application);
   fVenda.ShowModal;
+end;
+
+procedure TfMenu.Sair1Click(Sender: TObject);
+begin
+Close;
 end;
 
 end.

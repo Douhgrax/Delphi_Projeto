@@ -24,6 +24,7 @@ object DataM: TDataM
     Top = 104
   end
   object ADQEstoque: TFDQuery
+    Active = True
     Connection = FDConnection1
     SQL.Strings = (
       'select * from testoque')
@@ -32,10 +33,11 @@ object DataM: TDataM
   end
   object DataSource1: TDataSource
     DataSet = ADQEstoque
-    Left = 144
+    Left = 176
     Top = 160
   end
   object ADQCliente: TFDQuery
+    Active = True
     Connection = FDConnection1
     SQL.Strings = (
       'select * from tcliente')
@@ -47,27 +49,29 @@ object DataM: TDataM
     Left = 144
     Top = 216
   end
-  object FDQuery3: TFDQuery
+  object ADQGerenciar: TFDQuery
+    Active = True
     Connection = FDConnection1
     SQL.Strings = (
-      'select * from tfornecedor ')
+      'select * from tvendanfce')
     Left = 88
     Top = 272
   end
   object DataSource3: TDataSource
-    DataSet = FDQuery3
+    DataSet = ADQGerenciar
     Left = 144
     Top = 272
   end
-  object FDQuery4: TFDQuery
+  object ADQUsuario: TFDQuery
+    Active = True
     Connection = FDConnection1
     SQL.Strings = (
-      'select * from tcompra')
+      'select login, senha from tusuario')
     Left = 88
     Top = 320
   end
-  object DataSource4: TDataSource
-    DataSet = FDQuery4
+  object DTSUsuario: TDataSource
+    DataSet = ADQUsuario
     Left = 144
     Top = 320
   end

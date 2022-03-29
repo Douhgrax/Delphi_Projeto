@@ -14,7 +14,6 @@ type
     bntAlterarCliente: TButton;
     bntExcluirCliente: TButton;
     edtBuscaCliente: TEdit;
-    btnMostrarCliente: TButton;
     procedure btnMostrarClienteClick(Sender: TObject);
     procedure bntNovoClienteClick(Sender: TObject);
   private

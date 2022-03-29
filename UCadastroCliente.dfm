@@ -320,6 +320,7 @@
     Height = 49
     Caption = 'Cancelar'
     TabOrder = 15
+    OnClick = btnCancelarClienteClick
   end
   object btnGravarCliente: TButton
     Left = 576

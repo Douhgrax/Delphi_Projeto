@@ -19,10 +19,10 @@ type
     DataSource1: TDataSource;
     ADQCliente: TFDQuery;
     DataSource2: TDataSource;
-    FDQuery3: TFDQuery;
+    ADQGerenciar: TFDQuery;
     DataSource3: TDataSource;
-    FDQuery4: TFDQuery;
-    DataSource4: TDataSource;
+    ADQUsuario: TFDQuery;
+    DTSUsuario: TDataSource;
   private
     { Private declarations }
   public

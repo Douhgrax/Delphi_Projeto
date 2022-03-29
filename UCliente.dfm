@@ -20,6 +20,7 @@ object fCliente: TfCliente
     Top = 96
     Width = 685
     Height = 418
+    DataSource = DataM.DataSource2
     TabOrder = 0
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
@@ -37,7 +38,7 @@ object fCliente: TfCliente
     OnClick = bntNovoClienteClick
   end
   object bntAlterarCliente: TButton
-    Left = 200
+    Left = 304
     Top = 8
     Width = 105
     Height = 82
@@ -45,7 +46,7 @@ object fCliente: TfCliente
     TabOrder = 2
   end
   object bntExcluirCliente: TButton
-    Left = 400
+    Left = 576
     Top = 8
     Width = 105
     Height = 82
@@ -58,15 +59,5 @@ object fCliente: TfCliente
     Width = 121
     Height = 21
     TabOrder = 4
-  end
-  object btnMostrarCliente: TButton
-    Tag = 118
-    Left = 576
-    Top = 8
-    Width = 105
-    Height = 82
-    Caption = 'Mostrar'
-    TabOrder = 5
-    OnClick = btnMostrarClienteClick
   end
 end
